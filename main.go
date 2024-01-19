@@ -18,4 +18,6 @@ func main() {
 
 	routes.AuthRoutes(router)
 	routes.UserRoutes(router)
+
+	router.Run(":" + port)
 }
