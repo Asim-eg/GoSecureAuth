@@ -7,6 +7,6 @@ import (
 
 func UserRoutes(router *gin.Engine) {
 	router.Group("/GoAuthenticate")
-	router.GET("/users", controller.GetUsers)
-	router.GET("/users/:id", controller.GetUser)
+	router.GET("/users", controller.GetUsers())
+	router.GET("/users/:id", controller.GetUser())
 }
